@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body onload="fetchData()">
+    <div class="box">
+      <input type="text" value="bhopal" id="search" onchange="fetchData()" />
+
+      <div>
+        <h1 id="temp">14<sup>°</sup></h1>
+        <p style="text-align: center; color: white; font-size: 30px">Celcius</p>
+        <div class="data">Wind Speed <span id="ws">12</span></div>
+        <div class="data">Humidity <span id="hmdty">12</span></div>
+      </div>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <img width="250px" src="weather.png" alt="weather-img" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
